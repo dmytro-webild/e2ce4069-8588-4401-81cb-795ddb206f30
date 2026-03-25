@@ -51,7 +51,7 @@ export default function LandingPage() {
       imageAlt="Futuristic AI dashboard interface"
       buttons={[
         {
-          text: "Book a Free AI Strategy Call",          href: "https://calendly.com/bizautomater/discovery-call",          className: "sticky bottom-0 z-50 lg:static"}
+          text: "Book a Free AI Strategy Call",          href: "https://calendly.com/bizautomater/discovery-call"}
       ]}
       buttonAnimation="slide-up"
       mediaAnimation="opacity"
