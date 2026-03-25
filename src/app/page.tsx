@@ -38,7 +38,6 @@ export default function LandingPage() {
           name: "Testimonials",          id: "testimonials"},
       ]}
       brandName="AI 24 Automators"
-      className="sticky top-0 z-50 lg:static"
       button={{
         text: "Book a Call",        href: "https://calendly.com/bizautomater/discovery-call"}}
     />
@@ -120,6 +119,7 @@ export default function LandingPage() {
       ]}
       buttonClassName="sticky bottom-0 z-50 lg:static"
       background={{ variant: "radial-gradient" }}
+      useInvertedBackground={false}
     />
   </div>
 
@@ -176,7 +176,7 @@ export default function LandingPage() {
           text: "Book Your Free Call Now",          href: "https://calendly.com/bizautomater/discovery-call"},
       ]}
       buttonClassName="sticky bottom-0 z-50 lg:static"
-      background={{ variant: "glowing-orb" }}
+      background={{ variant: "radial-gradient" }}
     />
   </div>
       </ReactLenis>
