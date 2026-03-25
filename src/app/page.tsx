@@ -196,6 +196,7 @@ export default function LandingPage() {
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={false}
+      gridVariant="uniform-all-items-equal"
       title="Case Study: AI Calling Agent for Real Estate"
       description="See how our AI calling agent transformed lead follow-up and appointment setting for a leading real estate agency, allowing them to scale without increasing headcount. From initial inquiry to qualified lead, our AI handles it all."
       products={[
