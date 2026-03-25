@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
-import HeroLogoBillboardSplit from '@/components/sections/hero/HeroLogoBillboardSplit';
+import HeroLogoBillboard from '@/components/sections/hero/HeroLogoBillboard';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
@@ -42,20 +42,19 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
-      <HeroLogoBillboardSplit
+      <HeroLogoBillboard
       background={{
         variant: "sparkles-gradient"}}
       logoText="Automate Your Business with AI"
       description="We build AI voice agents and automation systems that handle calls, qualify leads, and close more deals for you. Limited slots available this week."
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/a-futuristic-ai-dashboard-interface-with-1774425466833-044f4499.png"
       imageAlt="Futuristic AI dashboard interface"
-      layoutOrder="default"
       buttons={[
         {
-          text: "Book a Free AI Strategy Call",          href: "https://calendly.com/bizautomater/discovery-call"},
+          text: "Book a Free AI Strategy Call",          href: "https://calendly.com/bizautomater/discovery-call",          className: "sticky bottom-0 z-50 lg:static"}
       ]}
       buttonAnimation="slide-up"
-      buttonClassName="sticky bottom-0 z-50 lg:static"
+      mediaAnimation="opacity"
     />
   </div>
 
