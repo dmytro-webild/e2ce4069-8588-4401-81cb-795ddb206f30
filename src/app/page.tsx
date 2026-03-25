@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
-import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
+import HeroLogoBillboardSplit from '@/components/sections/hero/HeroLogoBillboardSplit';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
@@ -33,9 +33,7 @@ export default function LandingPage() {
         {
           name: "Results",          id: "results-benefits"},
         {
-          name: "Case Study",          id: "case-study"},
-        {
-          name: "Testimonials",          id: "testimonials"},
+          name: "Case Study",          id: "case-study"}
       ]}
       brandName="AI 24 Automators"
       button={{
@@ -44,43 +42,20 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
-      <HeroSplitDoubleCarousel
+      <HeroLogoBillboardSplit
       background={{
         variant: "sparkles-gradient"}}
-      title="Automate Your Business with AI — 24/7 Without Hiring More Staff"
+      logoText="Automate Your Business with AI"
       description="We build AI voice agents and automation systems that handle calls, qualify leads, and close more deals for you. Limited slots available this week."
-      leftCarouselItems={[
-        {
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/a-futuristic-ai-dashboard-interface-with-1774425466833-044f4499.png",          imageAlt: "Futuristic AI dashboard interface"},
-        {
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/an-ai-voice-agent-s-user-interface-showi-1774425459799-2d33c691.png",          imageAlt: "AI voice agent user interface"},
-        {
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/an-automated-workflow-diagram-with-inter-1774425461068-be042bb5.png",          imageAlt: "Automated workflow diagram"},
-      ]}
-      rightCarouselItems={[
-        {
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/a-crm-system-dashboard-view-optimized-fo-1774425460578-8045a8e8.png",          imageAlt: "CRM system with AI integration"},
-        {
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/an-appointment-booking-system-interface--1774425460396-4cc66b44.png",          imageAlt: "AI appointment booking system"},
-        {
-          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/a-visually-striking-representation-of-an-1774425464876-9c47707e.png",          imageAlt: "AI powered lead qualification funnel"},
-      ]}
-      tag="Elevate Your Operations"
-      tagIcon={Sparkles}
-      tagAnimation="slide-up"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/a-futuristic-ai-dashboard-interface-with-1774425466833-044f4499.png"
+      imageAlt="Futuristic AI dashboard interface"
+      layoutOrder="default"
       buttons={[
         {
           text: "Book a Free AI Strategy Call",          href: "https://calendly.com/bizautomater/discovery-call"},
       ]}
       buttonAnimation="slide-up"
       buttonClassName="sticky bottom-0 z-50 lg:static"
-      avatars={[
-        {
-          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/a-sleek-modern-badge-icon-with-text-trus-1774425458916-11b7973d.png",          alt: "Trusted by businesses badge"},
-        {
-          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3BQbdl8fDI5y52TgienUxhnqziM/a-modern-badge-icon-with-text-ai-powered-1774425459146-2ae97375.png",          alt: "AI-powered systems badge"},
-      ]}
-      avatarText="Trusted by innovative businesses globally."
     />
   </div>
 
