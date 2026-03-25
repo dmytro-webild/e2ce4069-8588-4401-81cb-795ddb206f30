@@ -177,6 +177,7 @@ export default function LandingPage() {
       ]}
       buttonClassName="sticky bottom-0 z-50 lg:static"
       background={{ variant: "radial-gradient" }}
+      useInvertedBackground={false}
     />
   </div>
       </ReactLenis>
